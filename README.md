@@ -164,3 +164,14 @@ We select the message **What does the manual says about this?**
 
 ![image](https://github.com/user-attachments/assets/cb0c9b39-2e99-4ffd-9b2c-07815a6c7f7c)
 
+We got this answer from the Assistant
+
+![image](https://github.com/user-attachments/assets/46327e7b-8102-4b35-980a-d7df40b05992)
+
+![image](https://github.com/user-attachments/assets/c02ade5a-54c4-4ae0-9213-342024ea7b03)
+
+Very important if we click in the provided link we can navigate to the manual, where the referenced information is highlighted in yellow
+
+![image](https://github.com/user-attachments/assets/43bbbc67-c6b7-4640-94f3-82dab71a71bd)
+
+![image](https://github.com/user-attachments/assets/3f3579c2-761f-45ee-9cdc-bfa5e242e5eb)

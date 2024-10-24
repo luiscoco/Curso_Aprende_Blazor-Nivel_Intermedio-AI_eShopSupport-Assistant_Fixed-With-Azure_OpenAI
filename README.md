@@ -9,20 +9,24 @@
 
 1. We set the appsettings.json file with a connection to Azure OpenAI
 
+```json
  "ConnectionStrings": {
    "chatcompletion": "Endpoint=https://myaiserviceluis.openai.azure.com/;Key=7815bb4b3b1f4243be82faba074236a9;Deployment=gpt-4o"
  }
+```
 
 2. We modify the middleware Program.cs, we can replace Ollama with Azure OpenAI
 
+```csharp
 // Use this if you want to use Ollama
 //var chatCompletion = builder.AddOllama("chatcompletion").WithDataVolume();
 
 var chatCompletion = builder.AddConnectionString("chatcompletion");
-
+```
 
 3. Please review the PreventStreamingWithFunctions.cs file
 
+```csharp
  private class PreventStreamingWithFunctions(IChatClient innerClient) : DelegatingChatClient(innerClient)
  {
      public override Task<ChatCompletion> CompleteAsync(IList<ChatMessage> chatMessages, ChatOptions? options = null, CancellationToken cancellationToken = default)
@@ -43,9 +47,11 @@ var chatCompletion = builder.AddConnectionString("chatcompletion");
 
          return base.CompleteAsync(chatMessages, options, cancellationToken);
      }
+```
 
 4. StaffBackendClient.cs->replace the function AssistantChatAsync with this code:
 
+```csharp
 public async IAsyncEnumerable<AssistantChatReplyItem> AssistantChatAsync(AssistantChatRequest request, [EnumeratorCancellation] CancellationToken cancellationToken)
 {
     var httpRequest = new HttpRequestMessage(HttpMethod.Post, "/api/assistant/chat")
@@ -109,7 +115,7 @@ private async IAsyncEnumerable<AssistantChatReplyItem> DeserializeAndYieldItemsA
         }
     }
 }
-
+```
 
 
 

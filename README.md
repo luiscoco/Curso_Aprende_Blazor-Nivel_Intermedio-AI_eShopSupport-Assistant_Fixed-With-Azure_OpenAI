@@ -160,7 +160,7 @@ https://localhost:17191/
 
 ![image](https://github.com/user-attachments/assets/7ce34309-63e3-45ed-8d05-6093c0be7cda)
 
-We select the **StaffUI** web page as highlighted in the previous image
+We select the **Staffwebui** web page as highlighted in the previous image
 
 For exmple we select the ticket 298
 

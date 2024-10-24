@@ -39,6 +39,8 @@ var chatCompletion = builder.AddConnectionString("chatcompletion");
 
 ## 4. Please review the PreventStreamingWithFunctions.cs file
 
+![image](https://github.com/user-attachments/assets/9787125e-7213-4f5f-b7ae-ae4e263d1168)
+
 ```csharp
  private class PreventStreamingWithFunctions(IChatClient innerClient) : DelegatingChatClient(innerClient)
  {

@@ -148,13 +148,19 @@ We run the application in Visual Studio
 
 ![image](https://github.com/user-attachments/assets/2494d560-79ca-438a-88d6-3daf51e85375)
 
+We can check the images and containers in Docker Desktop
+
+![image](https://github.com/user-attachments/assets/18103703-df75-46a7-b8ca-da985564501a)
+
+![image](https://github.com/user-attachments/assets/92cf7ea3-9853-4a8c-9b4f-72e34c6176d8)
+
 We navigate to the Aspire **Dashboad** web page
 
 https://localhost:17191/
 
 ![image](https://github.com/user-attachments/assets/7ce34309-63e3-45ed-8d05-6093c0be7cda)
 
-We select the staffUI web page as highlighted in the previous image
+We select the **StaffUI** web page as highlighted in the previous image
 
 For exmple we select the ticket 298
 

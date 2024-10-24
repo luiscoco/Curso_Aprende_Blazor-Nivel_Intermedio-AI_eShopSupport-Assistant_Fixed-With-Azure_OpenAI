@@ -1,13 +1,13 @@
 # How to fix the Assistant in the eShopSupport App
 
-## 1. 
+The original **eshopsupport** github repo is in this URL: https://github.com/dotnet/eShopSupport
 
-## 2. 
-
-## 3. 
+## 1. We create a new Azure OpenAI service with a gpt-4o deployment
 
 
-1. We set the appsettings.json file with a connection to Azure OpenAI
+## 2. We modify the **appsettings.json** file with a connection to Azure OpenAI
+
+![image](https://github.com/user-attachments/assets/b95de13a-9650-49f2-956c-1d3491f43b77)
 
 ```json
  "ConnectionStrings": {
@@ -15,7 +15,9 @@
  }
 ```
 
-2. We modify the middleware Program.cs, we can replace Ollama with Azure OpenAI
+## 3. We modify the middleware Program.cs, we can replace Ollama with Azure OpenAI
+
+![image](https://github.com/user-attachments/assets/f338616e-71d6-45d4-9f50-67105e228e82)
 
 ```csharp
 // Use this if you want to use Ollama
@@ -24,7 +26,7 @@
 var chatCompletion = builder.AddConnectionString("chatcompletion");
 ```
 
-3. Please review the PreventStreamingWithFunctions.cs file
+## 4. Please review the PreventStreamingWithFunctions.cs file
 
 ```csharp
  private class PreventStreamingWithFunctions(IChatClient innerClient) : DelegatingChatClient(innerClient)
@@ -49,7 +51,7 @@ var chatCompletion = builder.AddConnectionString("chatcompletion");
      }
 ```
 
-4. StaffBackendClient.cs->replace the function AssistantChatAsync with this code:
+## 5. StaffBackendClient.cs->replace the function AssistantChatAsync with this code:
 
 ```csharp
 public async IAsyncEnumerable<AssistantChatReplyItem> AssistantChatAsync(AssistantChatRequest request, [EnumeratorCancellation] CancellationToken cancellationToken)

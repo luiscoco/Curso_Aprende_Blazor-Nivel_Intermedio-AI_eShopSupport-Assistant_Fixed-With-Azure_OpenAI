@@ -4,6 +4,17 @@ The original **eshopsupport** github repo is in this URL: https://github.com/dot
 
 ## 1. We create a new Azure OpenAI service with a gpt-4o deployment
 
+![image](https://github.com/user-attachments/assets/e72c1622-f604-4473-8867-aca0110b7a5a)
+
+![image](https://github.com/user-attachments/assets/a6c8027f-1648-4b29-897c-643fc83f9bb0)
+
+![image](https://github.com/user-attachments/assets/ee886b37-a3f6-466d-84de-c94587930946)
+
+![image](https://github.com/user-attachments/assets/5f5cdcb3-c08f-48c2-9f43-621b7792576b)
+
+![image](https://github.com/user-attachments/assets/ee56230e-e092-4d46-a0eb-afbf2bdf21ac)
+
+![image](https://github.com/user-attachments/assets/a3285ebd-13f9-423b-b143-e4188fa7d027)
 
 ## 2. We modify the **appsettings.json** file with a connection to Azure OpenAI
 

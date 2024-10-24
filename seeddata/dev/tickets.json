@@ -1,0 +1,36 @@
+[
+  {
+    "TicketId": 1,
+    "ProductId": 1,
+    "CreatedAt": "0001-01-01T00:00:00",
+    "CustomerId": 1,
+    "ShortSummary": "Effect of jacket getting fully wet",
+    "LongSummary": "Customer inquired about water-resistance and battery life of the jacket; now asking what happens if it gets fully wet.",
+    "CustomerSatisfaction": 5,
+    "TicketStatus": "Open",
+    "TicketType": "Question",
+    "Messages": [
+      {
+        "MessageId": 1,
+        "CreatedAt": "0001-01-01T00:00:00",
+        "TicketId": 0,
+        "IsCustomerMessage": true,
+        "Text": "Hi, thinking about getting the ThermoGear Heated Jacket Pro V2 for a winter hiking trip. Is it really water-resistant and how long does the battery last on medium setting? Thanks."
+      },
+      {
+        "MessageId": 2,
+        "CreatedAt": "0001-01-01T00:00:00",
+        "TicketId": 0,
+        "IsCustomerMessage": false,
+        "Text": "Hi, thank you for reaching out. According to the manual, the ThermoGear Heated Jacket Pro V2 is made from a durable, water-resistant material, providing excellent protection against wind and rain. However, it is not submersible. Additionally, the battery life on the medium setting is up to 7 hours. If you have any other questions, feel free to ask."
+      },
+      {
+        "MessageId": 3,
+        "CreatedAt": "0001-01-01T00:00:00",
+        "TicketId": 0,
+        "IsCustomerMessage": true,
+        "Text": "Thanks for the info. What happens if the jacket gets fully wet?"
+      }
+    ]
+  }
+]

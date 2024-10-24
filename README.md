@@ -134,8 +134,33 @@ private async IAsyncEnumerable<AssistantChatReplyItem> DeserializeAndYieldItemsA
 }
 ```
 
+## 6. How to run the application
 
+We first run **Docker Desktop**
 
+![image](https://github.com/user-attachments/assets/d69b7b12-ebb3-4e8e-80a7-d0f26e0a16ff)
 
+Then we run select the **AppHost.csproj** as the **StartUp Project**
 
+![image](https://github.com/user-attachments/assets/be75fd37-ef7f-4451-b116-1b2a5a98d21c)
+
+We run the application in Visual Studio
+
+![image](https://github.com/user-attachments/assets/2494d560-79ca-438a-88d6-3daf51e85375)
+
+We navigate to the Aspire **Dashboad** web page
+
+https://localhost:17191/
+
+![image](https://github.com/user-attachments/assets/7ce34309-63e3-45ed-8d05-6093c0be7cda)
+
+We select the staffUI web page as highlighted in the previous image
+
+For exmple we select the ticket 298
+
+![image](https://github.com/user-attachments/assets/988f8803-02b7-40d4-9b0d-0001db7a0e4d)
+
+We select the message **What does the manual says about this?**
+
+![image](https://github.com/user-attachments/assets/cb0c9b39-2e99-4ffd-9b2c-07815a6c7f7c)
 

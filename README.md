@@ -66,6 +66,8 @@ var chatCompletion = builder.AddConnectionString("chatcompletion");
 
 ## 5. StaffBackendClient.cs->replace the function AssistantChatAsync with this code:
 
+![image](https://github.com/user-attachments/assets/017808a8-a744-488c-a733-d69ea975342e)
+
 ```csharp
 public async IAsyncEnumerable<AssistantChatReplyItem> AssistantChatAsync(AssistantChatRequest request, [EnumeratorCancellation] CancellationToken cancellationToken)
 {

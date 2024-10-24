@@ -1,4 +1,4 @@
-# How to fix the Assistant in the eShopSupport App
+# How to fix the AI Assistant in the eShopSupport App
 
 The original **eshopsupport** github repo is in this URL: https://github.com/dotnet/eShopSupport
 
